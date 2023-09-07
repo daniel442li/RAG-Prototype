@@ -1,0 +1,1 @@
+streamlit run /home/daniel/Knowledgebase-embedding/app.py
