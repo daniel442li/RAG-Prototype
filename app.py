@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 from langchain.text_splitter import CharacterTextSplitter
-from dotenv import load_dotenv
+from dotenv import load_dotenv,find_dotenv
 import logging  # Step 1: Import logging
 import pickle
 from pathlib import Path
@@ -15,7 +15,8 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-load_dotenv()
+load_dotenv(find_dotenv())
+
 
 # 1. Vectorise the sales response csv data
 logging.info("loading vectorstore")

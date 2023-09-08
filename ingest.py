@@ -7,8 +7,8 @@ from langchain.vectorstores.faiss import FAISS
 import pickle
 from dotenv import load_dotenv
 from openai.embeddings_utils import get_embedding, cosine_similarity
-import openai 
 
+#Stores api key into the vectorstore
 load_dotenv()
 
 import numpy as np
