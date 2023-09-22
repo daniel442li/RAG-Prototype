@@ -85,5 +85,5 @@ def main():
         st.info(result)
 
 if __name__ == '__main__':
-    #streamlit run app.py 
+    #python -m streamlit run app.py 
     main()
